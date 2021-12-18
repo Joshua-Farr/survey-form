@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <h1 id=title>Jeni's Ice Cream Survey</h1>
+        <p id="description">Fill out this brief survey for a chance to win ice-cream for a year!</p>
+    </header>
+
+<form action="" id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name" >Name</label>
+        <input type="text" id="name" placeholder="Enter your first name" required>
+    </div>
+    
+    <div class="form-group">
+        <label id="email-label" for="email" placeholder="" >Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>  <!--Needs validation-->
+    </div>
+
+    <div class="form-group">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input type="number" id="number" placeholder="Enter your age" min="10" max="100"> <!--Needs validation-->
+    </div>
+
+    <p>What is your favorite flavor?</p>
+    <select name="" id="dropdown">
+        <option disabled selected value>Select Flavor</option>
+        <option value="">Brambleberry Crisp</option>
+        <option value="">Blackout Chocolate Cake</option>
+        <option value="">Salty Caramel</option>
+        <option value="">Lemon & Blueberries Parfait</option>
+        <option value="">Skillet Cinnamonroll</option>
+        <option value="">Brown BUtter Almond Brittle</option>
+    </select>
+
+    <div class="nearest-location">
+        <p>Select your nearest store location:</p>
+        <label>
+            <input name="location" value="Nashville" type="radio" class="radio-btn">
+            Nasvhille,TN
+        </label>
+
+        <label>
+            <input name="location" value="Columbus" type="radio" class="radio-btn">
+            Columbus,OH
+        </label>
+
+        <label>
+            <input name="location" value="Washington" type="radio" class="radio-btn">
+            Washington,DC
+        </label>
+    </div>
+
+
+
+
+    <div class="how-many-visits">
+        <p>How many times a month do you eat ice-cream?</p>
+        <div class="">
+            <label>
+                <input name="location" value="zero" type="checkbox" class="radio-btn">
+                0 Times per month
+            </label>
+        </div>
+
+        <div class="">
+            <label>
+                <input name="location" value="five" type="checkbox" class="radio-btn">
+                1-5 Times per month
+            </label>
+        </div>
+
+        <div class="">
+            <label>
+                <input name="location" value="ten" type="checkbox" class="radio-btn">
+                6-10 Times per month
+            </label>
+        </div>
+
+        <div class="">
+            <label>
+                <input name="location" value="eleven-plus" type="checkbox" class="radio-btn">
+                11+ Times per month
+            </label>
+        </div>
+    </div>
+
+    <p>Let us know anything else we can do to improve!</p>
+    <textarea >Enter your feedback in this space...</textarea>
+    
+    <button id="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
